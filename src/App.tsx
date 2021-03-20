@@ -1,11 +1,16 @@
 import React from 'react';
+import CounterWithReducer from './CounterWithReducer';
 
 interface AppProps  {
   message?: string;
 }
 
 const App: React.FunctionComponent<AppProps> = ({ message }) => {
-  return <div>{ message }</div>;
+  return (
+    <div>
+      <CounterWithReducer />
+    </div>
+  );
 };
 
 App.defaultProps = {
